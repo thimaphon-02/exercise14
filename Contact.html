@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ธิมาจารี (Thimajari) - ติดต่อ</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+Thai:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" onclick="navigateTo('index.html')" class="brand-logo">
+                <span class="brand-icon">ธิ</span>
+                <span class="brand-text">
+                    <span class="brand-name">ธิมาจารี</span>
+                    <span class="brand-en">Thimajari</span>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="#" onclick="navigateTo('index.html')" data-page="index.html">หน้าแรก</a>
+                <a href="#" onclick="navigateTo('About.html')" data-page="About.html">เรื่องราว</a>
+                <a href="#" onclick="navigateTo('Product.html')" data-page="Product.html">คอลเลกชั่น</a>
+                <a href="#" onclick="navigateTo('Contact.html')" data-page="Contact.html" class="active">ติดต่อ</a>
+            </nav>
+
+            <div class="header-action">
+                <a href="#" onclick="navigateTo('Contact.html')" class="btn-primary">นัดชมชิ้นงาน</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="เปิดเมนู">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+        <div class="contact-layout">
+
+            <!-- ฝั่งซ้าย: ข้อมูลการติดต่อ + แผนที่ -->
+            <aside class="contact-info-aside">
+                <p class="section-subtitle">CONTACT</p>
+                <h2 class="section-title font-heading">สัมผัสชิ้นงานเพิ่มเติม</h2>
+                <p class="section-desc">ติดตามคอลเลกชั่นพิเศษ หรือพูดคุยกับเราเพื่อนัดหมายเข้าชมชิ้นงานล่วงหน้า</p>
+
+                <!-- รายการลิงก์ติดต่อแบบต้นแบบ -->
+                <div class="contact-links">
+                    <a href="https://www.thimajari.com" target="_blank" class="contact-link-item">
+                        <div class="contact-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-text-group">
+                            <span class="contact-label">WEBSITE</span>
+                            <span class="contact-value">www.thimajari.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/thimajari.official" target="_blank" class="contact-link-item">
+                        <div class="contact-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <div class="contact-text-group">
+                            <span class="contact-label">INSTAGRAM</span>
+                            <span class="contact-value">@Thimajari.Official</span>
+                        </div>
+                    </a>
+
+                    <a href="https://line.me/R/ti/p/@thimajari" target="_blank" class="contact-link-item">
+                        <div class="contact-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-text-group">
+                            <span class="contact-label">LINE OFFICIAL</span>
+                            <span class="contact-value">@Thimajari</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- แผนที่ -->
+                <div class="contact-map-block">
+                    <div class="map-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z">
+                            </path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="map-title font-heading">แผนที่ร้านและการเข้าชม</span>
+                    </div>
+                    <div class="map-container">
+                        "<iframe src="
+                            https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124432.26516881038!2d100.77415269726559!3d12.939294000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310295003a0d38e5%3A0xe32dfbefae712398!2s164%2F446%20Park%20Village!5e0!3m2!1sth!2sth!4v1792169932600!5m2!1sth!2sth"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">"
+                        width="100%" height="200" style="border:0; border-radius: 4px; display: block;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="contact-note-desc">
+                        กรุณาติดต่อเพื่อนัดหมายล่วงหน้าก่อนเข้ามาชมชิ้นงานที่สตูดิโอของเรา
+                    </p>
+                </div>
+            </aside>
+
+            <!-- ขวา: -->
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-header">
+                        <p class="section-subtitle">ENQUIRY FORM</p>
+                        <h2 class="section-title font-heading">ฝากรายละเอียดไว้กับเรา</h2>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name" class="form-label">ชื่อ-นามสกุล</label>
+                            <input type="text" id="name" name="name" class="form-control" required
+                                placeholder="ชื่อและนามสกุล">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required
+                                placeholder="08X-XXX-XXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">อีเมล</label>
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">หัวข้อ</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required
+                            placeholder="เรื่องที่ต้องการติดต่อ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">รายละเอียด</label>
+                        <textarea id="message" name="message" class="form-control" required rows="5"
+                            placeholder="เล่าให้เราฟังเกี่ยวกับพื้นที่ โอกาสพิเศษ หรือชิ้นงานที่คุณสนใจ"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">ส่งข้อความ</button>
+                    <p class="form-disclaimer">ข้อมูลนี้ใช้เพื่อแสดงตัวอย่างการส่งแบบฟอร์มเท่านั้น กรุณาติดต่อ Line
+                        Official เพื่อส่งข้อความถึงร้านโดยตรง</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="footer-title">ธิมาจารี</p>
+                <p class="footer-subtitle">Thimajari Bonsai Studio</p>
+                <p class="footer-desc">สตูดิโอผู้สร้างสรรค์ศิลปะแห่งบอนไซและสุนทรียศาสตร์ธรรมชาติ เพื่อพื้นที่ที่สงบนิ่ง
+                    และสะท้อนรสนิยมของคุณ</p>
+            </div>
+
+            <div class="footer-links">
+                <p class="footer-heading">สำรวจ</p>
+                <div class="link-group">
+                    <a href="#" onclick="navigateTo('index.html')">หน้าแรก</a>
+                    <a href="#" onclick="navigateTo('About.html')">เรื่องราว</a>
+                    <a href="#" onclick="navigateTo('Product.html')">คอลเลกชั่น</a>
+                    <a href="#" onclick="navigateTo('Contact.html')" class="active">ติดต่อ</a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <p class="footer-heading">ติดต่อเรา</p>
+                <div class="link-group">
+                    <a href="https://www.thimajari.com">www.thimajari.com</a>
+                    <a href="https://www.instagram.com/thimajari.official" target="_blank" class="icon-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                        @Thimajari.Official
+                    </a>
+                    <a href="https://line.me/R/ti/p/@thimajari">Line Official: @Thimajari</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Thimajari. Crafted with patience, shaped by nature.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

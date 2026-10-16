@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ธิมาจารี (Thimajari) - คอลเลกชั่น</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+Thai:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- เรียกใช้ JS เพื่อกลับหน้าแรก -->
+            <a href="#" onclick="navigateTo('index.html')" class="brand-logo">
+                <span class="brand-icon">ธิ</span>
+                <span class="brand-text">
+                    <span class="brand-name">ธิมาจารี</span>
+                    <span class="brand-en">Thimajari</span>
+                </span>
+            </a>
+
+            <!--onclick-->
+            <nav class="main-nav">
+                <a href="#" onclick="navigateTo('index.html')" data-page="index.html" class="active">หน้าแรก</a>
+                <a href="#" onclick="navigateTo('About.html')" data-page="About.html">เรื่องราว</a>
+                <a href="#" onclick="navigateTo('Product.html')" data-page="Product.html">คอลเลกชั่น</a>
+                <a href="#" onclick="navigateTo('Contact.html')" data-page="Contact.html">ติดต่อ</a>
+            </nav>
+
+            <div class="header-action">
+                <a href="#" onclick="navigateTo('Contact.html')" class="btn-primary">นัดชมชิ้นงาน</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="เปิดเมนู">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+
+<main class="flex-grow-1" style="padding-top: 5rem;">
+    <section class="py-5 bg-light-wabi">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 font-heading">คอลเลกชั่น (The Collection)</h2>
+                    <p class="text-muted">สัมผัสชิ้นงานบอนไซระดับพรีเมียม ที่มีเพียงชิ้นเดียวในโลก</p>
+                </div>
+                
+                <div class="row g-4" id="product-grid">
+                  
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+ 
+    <!--  ท้ายยยยยย  -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="footer-title">ธิมาจารี</p>
+                <p class="footer-subtitle">Thimajari Bonsai Studio</p>
+                <p class="footer-desc">สตูดิโอผู้สร้างสรรค์ศิลปะแห่งบอนไซและสุนทรียศาสตร์ธรรมชาติ เพื่อพื้นที่ที่สงบ
+                    นิ่ง และสะท้อนรสนิยมของคุณ</p>
+            </div>
+
+            <div class="footer-links">
+                <p class="footer-heading">สำรวจ</p>
+                <div class="link-group">
+                    <a href="#" onclick="navigateTo('index.html')" class="active">หน้าแรก</a>
+                    <a href="#" onclick="navigateTo('About.html')">เรื่องราว</a>
+                    <a href="#" onclick="navigateTo('Product.html')">คอลเลกชั่น</a>
+                    <a href="#" onclick="navigateTo('Contact.html')">ติดต่อ</a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <p class="footer-heading">ติดต่อเรา</p>
+                <div class="link-group">
+                    <a href="https://www.thimajari.com">www.thimajari.com</a>
+                    <a href="https://www.instagram.com/thimajari.official" target="_blank" class="icon-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                        @Thimajari.Official
+                    </a>
+                    <a href="https://line.me/R/ti/p/@thimajari">Line Official: @Thimajari</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Thimajari. Crafted with patience, shaped by nature.</p>
+        </div>
+    </footer>
+    <!-- 3. MODAL Component -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-heading">นัดชมชิ้นงาน (By Appointment)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-4">เปิดให้เข้าชมเฉพาะการนัดหมายล่วงหน้า เพื่อสุนทรียภาพในการชมชิ้นงานอย่างเต็มที่</p>
+                    <form class="wabi-form">
+                        <input type="text" class="form-control mb-3" placeholder="ชื่อของคุณ" required>
+                        <input type="date" class="form-control mb-4" required>
+                        <button type="button" class="btn btn-olive w-100" data-bs-dismiss="modal" onclick="alert('บันทึกการนัดหมายสำเร็จ ทีมงานจะติดต่อกลับครับ')">ยืนยันการนัดหมาย</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา - ธิมาจารี (Thimajari)</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+Thai:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- เรียกใช้ JS เพื่อกลับหน้าแรก -->
+            <a href="#" onclick="navigateTo('index.html')" class="brand-logo">
+                <span class="brand-icon">ธิ</span>
+                <span class="brand-text">
+                    <span class="brand-name">ธิมาจารี</span>
+                    <span class="brand-en">Thimajari</span>
+                </span>
+            </a>
+
+            <!--onclick -->
+            <nav class="main-nav">
+                <a href="#" onclick="navigateTo('index.html')" data-page="index.html" class="active">หน้าแรก</a>
+                <a href="#" onclick="navigateTo('About.html')" data-page="About.html">เรื่องราว</a>
+                <a href="#" onclick="navigateTo('Product.html')" data-page="Product.html">คอลเลกชั่น</a>
+                <a href="#" onclick="navigateTo('Contact.html')" data-page="Contact.html">ติดต่อ</a>
+            </nav>
+
+            <div class="header-action">
+                <a href="#" onclick="navigateTo('Contact.html')" class="btn-primary">นัดชมชิ้นงาน</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="เปิดเมนู">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow-1 bg-light-wabi">
+
+        <div class="about-meaning-layout">
+            <div class="about-image-wrapper">
+                <img alt="" class="about-meaning-img" src="images/thimajari-craft.jpg">
+                <div class="about-floating-box">
+                    <p class="floating-title">ธิมา + จารี</p>
+                    <p class="floating-desc">ความลึกซึ้ง ผสานวิถีแห่งความตั้งใจและประณีต</p>
+                </div>
+            </div>
+
+            <!-- เนื้อหา -->
+            <div class="about-text-wrapper">
+                <p class="section-subtitle">The Meaning Behind Our Name</p>
+                <h2 class="section-title">นามที่หลอมรวม<br>ความคิดและวิถี</h2>
+
+                <div class="container">
+                    <p>คำว่า “ธิมาจารี” ถือกำเนิดขึ้นจากการหลอมรวมของความเฉียบแหลม ลึกซึ้ง — “ธิมา”
+                        เข้ากับวิถีแห่งการปฏิบัติตนด้วยความตั้งใจและประณีต — “จารี”</p>
+                    <p>ความหมายนี้กลายเป็นหัวใจของทุกชิ้นงาน เราค่อย ๆ ดัด ฟูมฟัก และเรียนรู้จังหวะของต้นไม้
+                        เพื่อเผยรูปทรงที่งดงามโดยไม่ฝืนธรรมชาติ</p>
+                    <p>ผลลัพธ์จึงไม่ใช่เพียงต้นไม้ตกแต่ง แต่คือประติมากรรมมีชีวิตที่ถ่ายทอดความสงบ ความอดทน
+                        และตัวตนของผู้ครอบครอง</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 mb-4">
+                    <h2 class="display-5 mb-4 font-heading">ความสงบที่สร้างขึ้นอย่างมีความหมาย</h2>
+                    <p class="lead mb-4 text-muted">ทุกสายใยของบอนไซคือ บันทึกแห่งเวลา
+                        และทุกพื้นที่ว่างคือ โอกาสให้หยุดพัก</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/thimajari-hero.jpg" alt="About" class="img-fluid rounded shadow-sm w-100">
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- OUR PRINCIPLES SECTION -->
+    <section class="py-5 bg-light-wabi">
+        <div class="container py-4">
+
+            <!-- ส่วนหัว (Header) -->
+            <div class="mb-4">
+                <p class="en-text text-uppercase mb-2 small" style="color: var(--olive); letter-spacing: 2px;">Our
+                    Principles</p>
+                <h2 class="font-heading display-6">สามหัวใจของงานธิมาจารี</h2>
+            </div>
+
+            <!-- เส้นแบ่ง (Divider) -->
+            <hr class="mb-5" style="border-color: #d1cfc4; opacity: 1;">
+
+            <!-- ส่วนเนื้อหา 3 คอลัมน์ (3-Column Grid) -->
+            <div class="row g-5">
+
+                <!-- คอลัม 1-->
+                <div class="col-md-4">
+                    <!-- Icon: Tree -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round" class="mb-4">
+                        <path d="M12 22v-7" />
+                        <path d="M8 15a4 4 0 0 1-3-7.5 4 4 0 0 1 7-3 4 4 0 0 1 7 3 4 4 0 0 1-3 7.5" />
+                    </svg>
+                    <h4 class="font-heading mb-3 h5">เคารพธรรมชาติ</h4>
+                    <p class="text-muted small" style="line-height: 1.8;">มองหาอัตลักษณ์ที่ซ่อนอยู่ในต้นไม้แต่ละต้น
+                        แล้วเปิดเผยอย่างอ่อนโยนโดยไม่เร่งรัด</p>
+                </div>
+
+                <!-- คอลัม 2-->
+                <div class="col-md-4">
+                    <!-- Icon: Hand -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round" class="mb-4">
+                        <path d="M18 11V6a2 2 0 0 0-4 0v4" />
+                        <path d="M14 11V4a2 2 0 0 0-4 0v6" />
+                        <path d="M10 11V5a2 2 0 0 0-4 0v8.5" />
+                        <path
+                            d="M6 13.5V9a2 2 0 0 0-4 0v4.5c0 4.14 3.36 7.5 7.5 7.5h1c4.14 0 7.5-3.36 7.5-7.5v-3.5a2 2 0 0 0-4 0v1.5" />
+                    </svg>
+                    <h4 class="font-heading mb-3 h5">ทำด้วยความอดทน</h4>
+                    <p class="text-muted small" style="line-height: 1.8;">ทุกกิ่งผ่านการดูแล จัดทรง
+                        และเฝ้ามองตามจังหวะเวลา เพื่อความงามที่ยั่งยืน</p>
+                </div>
+
+                <!-- คอลัม 3-->
+                <div class="col-md-4">
+                    <!-- Icon: Circle Dot -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round" class="mb-4">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="1.5" fill="var(--olive)" />
+                    </svg>
+                    <h4 class="font-heading mb-3 h5">สมดุลในพื้นที่</h4>
+                    <p class="text-muted small" style="line-height: 1.8;">คำนึงถึงเส้นสาย ฐานรอง กระถาง และ Negative
+                        Space เพื่อให้ชิ้นงานหายใจร่วมกับห้อง</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content mx-auto text-center">
+
+                <p class="quote-text mb-4">
+                    “ให้ธิมาจารี เป็นส่วนหนึ่งในการเติมเต็มความสงบ<br class="d-none d-md-block">
+                    นิ่ง และรสนิยมอันลึกซึ้งให้กับพื้นที่ของคุณ”
+                </p>
+
+                <a href="#" onclick="navigateTo('Product.html')" class="btn-quote mt-3">
+                    สัมผัสคอลเลกชั่น
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="ms-2">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  ท้ายยยยยย  -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="footer-title">ธิมาจารี</p>
+                <p class="footer-subtitle">Thimajari Bonsai Studio</p>
+                <p class="footer-desc">สตูดิโอผู้สร้างสรรค์ศิลปะแห่งบอนไซและสุนทรียศาสตร์ธรรมชาติ เพื่อพื้นที่ที่สงบ
+                    นิ่ง และสะท้อนรสนิยมของคุณ</p>
+            </div>
+
+            <div class="footer-links">
+                <p class="footer-heading">สำรวจ</p>
+                <div class="link-group">
+                    <a href="#" onclick="navigateTo('index.html')" class="active">หน้าแรก</a>
+                    <a href="#" onclick="navigateTo('About.html')">เรื่องราว</a>
+                    <a href="#" onclick="navigateTo('Product.html')">คอลเลกชั่น</a>
+                    <a href="#" onclick="navigateTo('Contact.html')">ติดต่อ</a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <p class="footer-heading">ติดต่อเรา</p>
+                <div class="link-group">
+                    <a href="https://www.thimajari.com">www.thimajari.com</a>
+                    <a href="https://www.instagram.com/thimajari.official" target="_blank" class="icon-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
+                        @Thimajari.Official
+                    </a>
+                    <a href="https://line.me/R/ti/p/@thimajari">Line Official: @Thimajari</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Thimajari. Crafted with patience, shaped by nature.</p>
+        </div>
+    </footer>
+
+    <!-- 3. MODAL Component -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-heading">นัดชมชิ้นงาน (By Appointment)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-4">เปิดให้เข้าชมเฉพาะการนัดหมายล่วงหน้า
+                        เพื่อสุนทรียภาพในการชมชิ้นงานอย่างเต็มที่</p>
+                    <form class="wabi-form">
+                        <input type="text" class="form-control mb-3" placeholder="ชื่อของคุณ" required>
+                        <input type="date" class="form-control mb-4" required>
+                        <button type="button" class="btn btn-olive w-100" data-bs-dismiss="modal"
+                            onclick="alert('บันทึกการนัดหมายสำเร็จ ทีมงานจะติดต่อกลับครับ')">ยืนยันการนัดหมาย</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
